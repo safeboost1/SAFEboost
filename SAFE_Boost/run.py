@@ -74,6 +74,7 @@ def run_HExgb(X_train, y_train, X_test, y_test, max_bin, depth, n_estimators, bi
     model.predict(inf_hist)
     y_pred, _ = utils.print_inferec_res(context, model)
     acc, is_correct = utils.accuracy(y_pred, y_test)
+    print(f"[SAFE-BOOST] Accuracy: {acc:.4f}")
 if __name__ == "__main__":
     data_base_path = "../data"
     dataset_name = "iris"
