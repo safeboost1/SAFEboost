@@ -457,6 +457,7 @@ class MyXGBClassifier:
             path_list = self.make_path(path_math, copy_ctxt)
 
             total_path = self.cal_path( path_list)  
+            total_time += time.time() - tmp_time
             print("cal_path_time:", time.time() - tmp_time)
 
             tmp_time = time.time()
