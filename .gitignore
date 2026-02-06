@@ -1,0 +1,14 @@
+
+
+
+*.txt
+
+**/Keys/
+
+**/keys/
+**/exp/
+**/__pycache__/
+*.pyc
+*.pyo
+
+**/xgboost/
