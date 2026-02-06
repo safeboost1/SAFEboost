@@ -290,7 +290,7 @@ def decrypt_res_by_one_row(context, model):
                 m = data.decrypt()
                 for j in range(0, context.num_slots):
                     idx = j
-                    if 10**-6 < abs(m[idx].real) < 99:
+                    if 10**-6 < abs(m[idx].real) < 49:
                         y_predict = m[idx].real
                         Fm += lr * y_predict
                         print("predict:", y_predict)
@@ -305,7 +305,7 @@ def check_ct_pred(context, ct_pred):
             m = data.decrypt()
             for j in range(0, context.num_slots):
                 idx = j
-                if 10**-6 < abs(m[idx].real) < 99:
+                if 10**-6 < abs(m[idx].real) < 49:
                     y_predict = m[idx].real
                     ct_pred_list.append(y_predict)
                     print("predict:", y_predict)
